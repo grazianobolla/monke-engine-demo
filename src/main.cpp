@@ -1,4 +1,4 @@
-#include "core/engine.h"
+#include <monke/core/engine.h>
 
 class Game : public mk::Engine
 {
@@ -15,7 +15,7 @@ class Game : public mk::Engine
     {
         // detect W press and change scale
         if (input.is_key_pressed(GLFW_KEY_W))
-            scale += delta * 0.5f;
+            scale.x += delta * 0.5f;
     }
 
     void render()
